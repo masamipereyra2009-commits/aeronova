@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AeroNova: explora el mundo de la aviación, calcula viajes y pon a prueba tus conocimientos.">
+  <title>AeroNova | Explora la aviación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="AeroNova, inicio">
+      <span class="brand-mark">A</span><span>Aero<span class="brand-light">Nova</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <button class="nav-link active" data-page="inicio">Inicio</button>
+      <button class="nav-link" data-page="explorar">Explorar</button>
+      <button class="nav-link" data-page="simulador">Simulador</button>
+      <button class="nav-link" data-page="quiz">Quiz</button>
+    </nav>
+    <a class="top-cta" href="#explorar" data-go="explorar">Descubrir <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="page active" id="inicio">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> TU PRÓXIMO DESTINO EMPIEZA AQUÍ</div>
+          <h1>El cielo no es<br>el límite<span class="period">.</span></h1>
+          <p class="hero-text">Descubre la ciencia, las profesiones y la tecnología que hacen posible volar. Tu aventura por el mundo de la aviación comienza aquí.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" data-go="explorar">Explorar aviación <span>↗</span></button>
+            <button class="button button-ghost" data-go="quiz"><span class="play">▶</span> Probar mis conocimientos</button>
+          </div>
+          <div class="hero-stats">
+            <div><strong>3</strong><span>áreas para descubrir</span></div>
+            <div><strong>5</strong><span>preguntas de aviación</span></div>
+            <div><strong>∞</strong><span>posibilidades</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=85" alt="Avión de pasajeros volando por encima de las nubes">
+            <div class="image-shade"></div>
+            <div class="flight-chip"><span class="chip-icon">✈</span><span><small>VISTA DE VUELO</small><b>Una nueva perspectiva</b></span></div>
+            <div class="altitude-chip"><span>ALTITUD</span><b>35,000 ft</b><small>10,668 m aprox.</small></div>
+          </div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="decor-star star-one">✦</div><div class="decor-star star-two">✧</div>
+        </div>
+      </div>
+      <div class="ticker"><span>✦</span> TECNOLOGÍA <i>•</i> EXPLORACIÓN <i>•</i> INNOVACIÓN <i>•</i> AVIACIÓN <i>•</i> FUTURO <span>✦</span></div>
+      <section class="content-section">
+        <div class="section-heading"><div><p class="eyebrow">EMPIEZA A EXPLORAR</p><h2>Hay mucho más<br>allá de las nubes.</h2></div><p>Conoce las áreas que conectan la pasión por volar con la ciencia, el trabajo en equipo y la tecnología.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon blue">✈</div><p class="card-kicker">01 / PROFESIONES</p><h3>Personas que hacen volar</h3><p>Pilotos, controladores aéreos, técnicos y tripulantes trabajan juntos para que cada vuelo sea seguro.</p><button class="text-link" data-go="explorar">Conocer profesiones <span>→</span></button></article>
+          <article class="feature-card"><div class="feature-icon violet">⌁</div><p class="card-kicker">02 / TECNOLOGÍA</p><h3>Innovación en el aire</h3><p>Los sistemas de navegación, los radares y la inteligencia artificial apoyan las operaciones aéreas.</p><button class="text-link" data-go="explorar">Ver tecnología <span>→</span></button></article>
+          <article class="feature-card"><div class="feature-icon orange">◎</div><p class="card-kicker">03 / PLANIFICACIÓN</p><h3>Cada ruta cuenta</h3><p>Distancia, combustible, clima y costos: cada viaje necesita planificación antes del despegue.</p><button class="text-link" data-go="simulador">Calcular un viaje <span>→</span></button></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="page inner-page" id="explorar">
+      <div class="page-intro"><p class="eyebrow">CONOCIMIENTO EN MOVIMIENTO</p><h1>Explora el universo<br>de la <span class="gradient-text">aviación.</span></h1><p>Descubre algunas de las áreas que hacen posible conectar personas y lugares.</p></div>
+      <div class="explore-grid">
+        <article class="explore-card large-card"><img src="https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=1200&q=85" alt="Avión de pasajeros en un aeropuerto"><div class="explore-card-content"><span class="pill">OPERACIONES</span><h2>La profesión de piloto</h2><p>Un piloto planifica vuelos, interpreta información meteorológica, se comunica con el control aéreo y toma decisiones para mantener la seguridad.</p></div></article>
+        <article class="explore-card"><img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=900&q=85" alt="Tecnología aeroespacial y cohete"><div class="explore-card-content"><span class="pill">INNOVACIÓN</span><h2>Tecnología aérea</h2><p>Los sensores, la navegación digital y los sistemas de asistencia ayudan a mejorar la precisión y la eficiencia.</p></div></article>
+        <article class="explore-card"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85" alt="Vista de un avión sobre las nubes"><div class="explore-card-content"><span class="pill">TRABAJO EN EQUIPO</span><h2>Seguridad compartida</h2><p>La seguridad depende de procedimientos, comunicación clara y coordinación entre diferentes profesionales.</p></div></article>
+      </div>
+      <div class="fact-banner"><div class="fact-symbol">✦</div><div><p class="eyebrow">¿SABÍAS QUE?</p><h3>Volar es un trabajo de equipo.</h3><p>Una operación aérea conecta a la tripulación, el personal de tierra, mantenimiento, meteorología y control de tránsito aéreo.</p></div></div>
+      <div class="contact-panel"><div><p class="eyebrow">¿QUIERES SABER MÁS?</p><h2>Envía una pregunta.</h2><p>Completa el formulario y la página te mostrará una confirmación.</p></div><form id="contactForm" class="contact-form"><label for="userName">Tu nombre</label><input id="userName" name="name" type="text" placeholder="Escribe tu nombre" required minlength="2"><label for="userQuestion">¿Qué te gustaría aprender?</label><textarea id="userQuestion" name="question" placeholder="Escribe tu pregunta..." required minlength="5" rows="3"></textarea><button class="button button-primary" type="submit">Enviar pregunta <span>→</span></button><p id="formMessage" class="form-message" role="status"></p></form></div>
+    </section>
+
+    <section class="page inner-page" id="simulador">
+      <div class="page-intro"><p class="eyebrow">PLANIFICA TU RUTA</p><h1>Tu próximo viaje,<br><span class="gradient-text">en números.</span></h1><p>Usa esta calculadora educativa para estimar un presupuesto de viaje. Los valores son ejemplos, no tarifas reales.</p></div>
+      <div class="simulator-layout">
+        <div class="simulator-card">
+          <div class="card-title"><span class="round-icon">⌁</span><div><h2>Calculadora de viaje</h2><p>Personaliza los datos de tu ruta.</p></div></div>
+          <form id="travelForm">
+            <div class="field-row"><div class="field"><label for="origin">Ciudad de origen</label><input id="origin" type="text" value="Lima" required></div><div class="field"><label for="destination">Destino</label><input id="destination" type="text" value="São Paulo" required></div></div>
+            <div class="field-row"><div class="field"><label for="distance">Distancia estimada (km)</label><input id="distance" type="number" min="1" max="20000" value="3500" required></div><div class="field"><label for="price">Costo por km (USD)</label><input id="price" type="number" min="0.01" max="5" step="0.01" value="0.12" required></div></div>
+            <div class="field"><label for="travelers">Número de viajeros</label><div class="range-line"><input id="travelers" type="range" min="1" max="8" value="1"><output id="travelerOutput">1 persona</output></div></div>
+            <button class="button button-primary full-button" type="submit">Calcular presupuesto <span>↗</span></button>
+          </form>
+        </div>
+        <aside class="result-card" aria-live="polite"><p class="eyebrow">PRESUPUESTO ESTIMADO</p><div class="result-plane">✈</div><p class="result-label">Costo total de referencia</p><h2 id="totalCost">$420.00</h2><div class="result-divider"></div><div class="result-line"><span>Ruta</span><strong id="routeResult">Lima → São Paulo</strong></div><div class="result-line"><span>Por persona</span><strong id="personCost">$420.00</strong></div><div class="result-line"><span>Viajeros</span><strong id="peopleResult">1</strong></div><p class="disclaimer">Estimación ilustrativa. No incluye tasas, equipaje ni otros cargos y no representa una cotización de aerolínea.</p><button id="resetCalc" class="text-link">Restablecer valores ↺</button></aside>
+      </div>
+    </section>
+
+    <section class="page inner-page" id="quiz">
+      <div class="page-intro"><p class="eyebrow">PONTE A PRUEBA</p><h1>¿Cuánto sabes<br>de <span class="gradient-text">aviación?</span></h1><p>Responde cinco preguntas y descubre tu resultado.</p></div>
+      <div class="quiz-layout"><div class="quiz-card">
+        <div class="quiz-top"><span class="pill">QUIZ AERONOVA</span><span id="questionCount">PREGUNTA 1 DE 5</span></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        <div id="quizContent"><h2 id="questionText">¿Qué profesional está al mando de la aeronave durante el vuelo?</h2><div id="answerOptions" class="answer-options"></div><button id="nextQuestion" class="button button-primary full-button" disabled>Comprobar respuesta <span>→</span></button><p id="answerFeedback" class="answer-feedback" role="status"></p></div>
+        <div id="quizResult" class="quiz-result hidden"><div class="result-medal">✦</div><p class="eyebrow">RESULTADO FINAL</p><h2 id="finalScore">4 de 5</h2><p id="resultText">¡Buen trabajo!</p><button id="restartQuiz" class="button button-primary">Volver a intentarlo ↻</button></div>
+      </div><aside class="quiz-aside"><div class="aside-orbit">✈</div><p class="eyebrow">APRENDE JUGANDO</p><h3>Un paso más cerca de tus metas.</h3><p>La aviación requiere curiosidad, preparación, responsabilidad y trabajo en equipo. Sigue aprendiendo pregunta a pregunta.</p><div class="mini-stat"><strong>5</strong><span>preguntas</span><strong>1</strong><span>reto nuevo</span></div></aside></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">A</span><span>Aero<span class="brand-light">Nova</span></span></a><p>Explora. Aprende. Despega.</p><span>Proyecto educativo · HTML · CSS · JavaScript</span></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
